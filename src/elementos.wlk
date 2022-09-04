@@ -35,7 +35,8 @@ object mascaraPolitico {
 	}
 }
 object pinguino{
-	method promesas{
+	
+	method promesas(){
 		return 30
 	}
 }

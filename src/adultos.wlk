@@ -8,11 +8,11 @@ object mirca {
 	method tolerancia(){
 		return tolerancia
 	}
-	method serAsustadoPor(chico){
-		chico.entregaCaramelos(self.darCaramelos(chico))
+	method serAsustadoPor(alguien){
+		alguien.recibirCaramelos(self.darCaramelos(alguien))
 		tolerancia=tolerancia-1
 	}
-	method darCaramelos(chico){
-		return (chico.capacidadDeSusto()-tolerancia ).max(0)
+	method darCaramelos(alguien){
+		return (alguien.capacidadDeSusto()-tolerancia ).max(0)
 	}
 }
